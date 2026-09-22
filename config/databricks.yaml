@@ -1,0 +1,18 @@
+project_name: fraudlens-ai
+catalog: fraudlens
+schemas:
+  bronze: fraudlens.bronze
+  silver: fraudlens.silver
+  gold: fraudlens.gold
+
+storage:
+  bronze_root: /Volumes/fraudlens/landing/
+  silver_root: /Volumes/fraudlens/curated/
+  gold_root: /Volumes/fraudlens/gold/
+
+unity_catalog:
+  catalog: fraudlens
+  schema: bronze
+
+runtime:
+  cluster: "auto"
